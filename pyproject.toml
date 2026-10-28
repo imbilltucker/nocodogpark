@@ -1,0 +1,21 @@
+[project]
+name = "noco-dog-parks"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Bill Tucker", email = "imbilltucker@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "folium>=0.20.0",
+    "geopandas>=1.2.0",
+    "pyinstaller>=6.22.3",
+]
+
+[project.scripts]
+noco-dog-parks = "noco_dog_parks:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
