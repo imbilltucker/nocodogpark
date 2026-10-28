@@ -16,4 +16,5 @@ def main() -> None:
       folium.Marker(p["loc"], popup=p["name"], icon=folium.Icon(color="green", icon="paw", prefix="fa")).add_to(m)
 
     m.save("noco_dog_parks.html")
+    print("Map written to: noco_dog_parks.html")
 
